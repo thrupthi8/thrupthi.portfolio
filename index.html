@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thrupthi | Professional Portfolio</title>
+  <meta name="description" content="Professional portfolio of Thrupthi showcasing projects, education, and certifications.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons (Phosphor Icons) -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Graphics -->
+  <div class="bg-graphics">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+
+  <!-- Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo gradient-text">Thrupthi.</div>
+        <ul class="nav-links">
+          <li><a data-target="home" class="active">Home</a></li>
+          <li><a data-target="about">About</a></li>
+          <li><a data-target="projects">Projects</a></li>
+          <li><a data-target="education">Education</a></li>
+          <li><a data-target="certification">Certification</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Areas -->
+  <main class="container">
+    
+    <!-- Home Section -->
+    <section id="home" class="active">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="gradient-text">Thrupthi</span></h1>
+          <p>A passionate professional dedicated to building elegant solutions and creating impactful work.</p>
+          <div class="hero-actions">
+            <!-- Replace href with actual resume PDF path -->
+            <a href="ImageToPDF_1776994265753.pdf" target="_blank" download class="btn btn-primary">
+              <i class="ph ph-download-simple"></i> Download Resume
+            </a>
+            <a href="mailto:contact@example.com" class="btn btn-outline">
+              <i class="ph ph-envelope-simple"></i> Contact Me
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="img-container">
+            <!-- Using one of the images as a placeholder for profile -->
+            <img src="WhatsApp Image 2026-04-21 at 2.26.08 PM.jpeg" alt="Thrupthi Profile Picture">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About <span class="gradient-text">Me</span></h2>
+      <div class="about-content" style="margin-top: 2rem; display: flex; gap: 3rem;">
+        <div style="flex: 1; color: var(--text-muted); font-size: 1.1rem;">
+          <p style="margin-bottom: 1rem;">I am a dedicated professional with a passion for continuous learning and problem solving. I enjoy tackling complex challenges and delivering high-quality results.</p>
+          <p>My journey has equipped me with a diverse skill set, allowing me to approach projects holistically and collaboratively.</p>
+        </div>
+        <div style="flex: 1;">
+          <h3 style="margin-bottom: 1rem;">Core Skills</h3>
+          <ul style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <li style="background: var(--surface-color); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--border-color);">Problem Solving</li>
+            <li style="background: var(--surface-color); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--border-color);">Communication</li>
+            <li style="background: var(--surface-color); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--border-color);">Project Management</li>
+            <li style="background: var(--surface-color); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--border-color);">Adaptability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+        <!-- Project Card 1 -->
+        <div style="background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: var(--transition);" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="height: 200px; background: #2dd4bf; display:flex; align-items:center; justify-content:center;">
+             <i class="ph ph-microphone" style="font-size: 4rem; color: #134e4a;"></i>
+          </div>
+          <div style="padding: 1.5rem;">
+            <h3 style="margin-bottom: 0.5rem;">Multi-Language Voice Converter</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">An application that converts voice input into multiple languages in real-time, facilitating seamless cross-lingual communication.</p>
+            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View Project</a>
+          </div>
+        </div>
+        
+        <!-- Project Card 2 -->
+        <div style="background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: var(--transition);" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="height: 200px; background: #818cf8; display:flex; align-items:center; justify-content:center;">
+             <i class="ph ph-chart-bar" style="font-size: 4rem; color: #312e81;"></i>
+          </div>
+          <div style="padding: 1.5rem;">
+            <h3 style="margin-bottom: 0.5rem;">Project Two</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">Another fantastic project demonstrating my skills and dedication.</p>
+            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>My <span class="gradient-text">Education</span></h2>
+      <div style="margin-top: 3rem; border-left: 2px solid var(--border-color); padding-left: 2rem; position: relative;">
+        
+        <div style="margin-bottom: 3rem; position: relative;">
+          <div style="position: absolute; left: -2.65rem; top: 0; width: 20px; height: 20px; background: var(--gradient); border-radius: 50%; border: 4px solid var(--bg-color);"></div>
+          <h3 style="font-size: 1.5rem; color: var(--primary);">Government First Grade College, Tiptur</h3>
+          <h4 style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.5rem;">Bachelor of Computer Applications (BCA)</h4>
+          <p style="color: var(--text-muted); margin-top: 1rem;"><strong>CGPA:</strong> 7.81/10</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section id="certification">
+      <h2>My <span class="gradient-text">Certifications</span></h2>
+      <p style="color: var(--text-muted); margin-top: 1rem;">Here are some of the professional certifications I have earned.</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+        
+        <div style="background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; text-align: center;">
+          <i class="ph ph-certificate gradient-text" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+          <h3 style="margin-bottom: 1rem;">Professional Certificate</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Issued by Recognizing Authority</p>
+          <!-- Replace href with actual certificate image path -->
+          <a href="WhatsApp Image 2026-04-24 at 6.48.44 AM.jpeg" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;">
+            <i class="ph ph-eye"></i> View Certificate
+          </a>
+        </div>
+
+        <div style="background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; text-align: center;">
+          <i class="ph ph-certificate gradient-text" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+          <h3 style="margin-bottom: 1rem;">Introduction to Generative AI Studio</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Issued by Google Cloud</p>
+          <a href="10422728_Introduction_to_Generative_AI_Studio_10150400.pdf" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;">
+            <i class="ph ph-eye"></i> View Certificate
+          </a>
+        </div>
+
+        <div style="background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; text-align: center;">
+          <i class="ph ph-certificate gradient-text" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+          <h3 style="margin-bottom: 1rem;">Python for Beginners</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Issued by Great Learning</p>
+          <a href="10422728_Python_for_Beginners_10149616.pdf" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;">
+            <i class="ph ph-eye"></i> View Certificate
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 2rem; border-top: 1px solid var(--border-color); margin-top: 2rem; color: var(--text-muted);">
+    <p>&copy; 2026 Thrupthi. All rights reserved.</p>
+  </footer>
+
+  <!-- Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
